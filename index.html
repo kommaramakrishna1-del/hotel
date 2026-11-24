@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grand Horizon Hotel - Experience 5-star luxury, world-class hospitality, premium suites, and serene coastal views. Book your stay today.">
+    <title>Grand Horizon Hotel | Luxury & Comfort Hotel Booking</title>
+
+    <!-- Google Fonts: Playfair Display (Serif Elegance) & Poppins (Modern Clean Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons for Crisp Modern UI Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================================
+         SECTION 1: NAVIGATION BAR
+         Includes: Brand Logo, Main Menu Links, and Book CTA Button
+         Features: Pure CSS Mobile Hamburger Menu (No JS needed)
+         ========================================================= -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-crown"></i></span>
+                <span class="logo-text">
+                    <span class="logo-title">GRAND HORIZON</span>
+                    <span class="logo-subtitle">HOTEL & RESORT</span>
+                </span>
+            </a>
+
+            <!-- Pure CSS Mobile Menu Toggle (Checkbox Hack) -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Open Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </label>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#rooms" class="nav-link">Rooms</a></li>
+                    <li class="nav-item"><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li class="nav-item"><a href="#offers" class="nav-link">Offers</a></li>
+                    <li class="nav-item"><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-cta-wrapper">
+                    <a href="#booking" class="btn btn-primary nav-book-btn">
+                        <i class="fa-solid fa-calendar-check"></i> Book Now
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- =========================================================
+         SECTION 2: HERO / WELCOME SECTION
+         Includes: Luxury Background, Grand Headings, Subtitle, CTAs,
+         and a Floating Quick-Reservation Bar
+         ========================================================= -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-star"></i>
+                <span>5-Star Luxury Experience</span>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h1 class="hero-title">Experience Luxury &amp; Comfort</h1>
+            <p class="hero-subtitle">Your Perfect Stay Begins Here</p>
+            <p class="hero-desc">
+                Immerse yourself in timeless elegance, exquisite gastronomy, and unmatched royal hospitality designed to make every moment unforgettable.
+            </p>
+            <div class="hero-actions">
+                <a href="#rooms" class="btn btn-primary btn-large">
+                    <i class="fa-solid fa-bed"></i> Explore Rooms
+                </a>
+                <a href="#booking" class="btn btn-secondary btn-large">
+                    <i class="fa-solid fa-key"></i> Reserve Stay
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Quick Availability Bar (Hero Base) -->
+        <div class="hero-quick-bar">
+            <div class="quick-bar-container">
+                <div class="quick-item">
+                    <label for="quick-checkin"><i class="fa-regular fa-calendar-days"></i> Check-In</label>
+                    <input type="date" id="quick-checkin" value="2026-12-01">
+                </div>
+                <div class="quick-divider"></div>
+                <div class="quick-item">
+                    <label for="quick-checkout"><i class="fa-regular fa-calendar-days"></i> Check-Out</label>
+                    <input type="date" id="quick-checkout" value="2026-12-05">
+                </div>
+                <div class="quick-divider"></div>
+                <div class="quick-item">
+                    <label for="quick-guests"><i class="fa-solid fa-users"></i> Guests</label>
+                    <select id="quick-guests">
+                        <option value="1">1 Adult</option>
+                        <option value="2" selected>2 Adults</option>
+                        <option value="3">2 Adults, 1 Child</option>
+                        <option value="4">4+ Family</option>
+                    </select>
+                </div>
+                <div class="quick-divider"></div>
+                <div class="quick-item">
+                    <label for="quick-room-type"><i class="fa-solid fa-hotel"></i> Room Type</label>
+                    <select id="quick-room-type">
+                        <option value="deluxe" selected>Deluxe Room</option>
+                        <option value="standard">Standard Room</option>
+                        <option value="suite">Luxury Suite</option>
+                        <option value="family">Family Room</option>
+                    </select>
+                </div>
+                <div class="quick-item-btn">
+                    <a href="#booking" class="btn btn-primary btn-block">
+                        <i class="fa-solid fa-magnifying-glass"></i> Check Rates
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 3: ABOUT OUR HOTEL
+         Includes: Hotel Narrative, Highlights, Stat Counters,
+         and Luxury Image Showcase
+         ========================================================= -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Column: Image Collage -->
+                <div class="about-images-col">
+                    <div class="about-image-wrapper primary-img">
+                        <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" 
+                             alt="Grand Horizon Hotel Luxury Interior and Architecture" 
+                             class="about-img">
+                    </div>
+                    <div class="about-image-wrapper secondary-img">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" 
+                             alt="Luxury Resort Swimming Pool View" 
+                             class="about-img">
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="about-badge-card">
+                        <span class="badge-number">15+</span>
+                        <span class="badge-text">Years of Royal Hospitality</span>
+                    </div>
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="about-content-col">
+                    <div class="section-tag">About Grand Horizon</div>
+                    <h2 class="section-title">A Sanctuary of Elegance, Serenity &amp; Royal Comfort</h2>
+                    <p class="about-lead">
+                        Nestled along the pristine coastline, Grand Horizon Hotel stands as a beacon of architectural brilliance and world-class luxury.
+                    </p>
+                    <p class="about-desc">
+                        Since our inception, we have redefined opulent living. Whether you are traveling for executive business, an intimate romantic getaway, or a memorable family holiday, our bespoke 24/7 concierge service, Michelin-inspired cuisine, and tranquil surroundings promise a sublime stay tailored to your desires.
+                    </p>
+
+                    <!-- Key Feature Pillars -->
+                    <div class="about-features-grid">
+                        <div class="about-feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <h4 class="feature-title">5-Star Safety &amp; Privacy</h4>
+                                <p class="feature-desc">Uncompromising security and dedicated discreet staff.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+                            <div>
+                                <h4 class="feature-title">Michelin-Crafted Dining</h4>
+                                <p class="feature-desc">Exquisite culinary journeys prepared by master chefs.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-water"></i></div>
+                            <div>
+                                <h4 class="feature-title">Scenic Ocean Horizons</h4>
+                                <p class="feature-desc">Sweeping panoramic vistas from every premium terrace.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+                            <div>
+                                <h4 class="feature-title">24/7 Dedicated Butler</h4>
+                                <p class="feature-desc">Personalized care attending to your every convenience.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistics Strip -->
+                    <div class="about-stats-strip">
+                        <div class="stat-box">
+                            <span class="stat-number">250+</span>
+                            <span class="stat-label">Luxury Rooms</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Happy Guests</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Global Awards</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Gourmet Restaurants</span>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#rooms" class="btn btn-primary">Discover Our Accommodations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 4: ROOM CATEGORIES
+         Includes: 4 Distinct Categories with Images, Descriptions,
+         Feature Tags, Pricing, and Direct Booking Actions
+         ========================================================= -->
+    <section class="rooms-section section-padding bg-light" id="rooms">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Accommodations</span>
+                <h2 class="section-title">Designed for Ultimate Serenity</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle">
+                    Select from our thoughtfully crafted suites, where classical elegance seamlessly harmonizes with state-of-the-art modern comforts.
+                </p>
+            </div>
+
+            <div class="rooms-grid">
+                <!-- Room 1: Standard Room -->
+                <article class="room-card">
+                    <div class="room-img-container">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80" 
+                             alt="Standard Room with Cozy Double Bed" 
+                             class="room-img">
+                        <span class="room-badge value-badge">Best Value</span>
+                        <div class="room-price-tag">
+                            <span class="price-val">₹2,000</span>
+                            <span class="price-period">/ night</span>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <span class="rating-text">4.7 (130 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Standard Room</h3>
+                        <p class="room-description">
+                            Comfortable, stylish, and highly affordable. Perfect for solo travelers and business professionals desiring a refreshing retreat.
+                        </p>
+                        <!-- Room Facilities List -->
+                        <div class="room-amenities">
+                            <span class="amenity-item" title="Queen Size Bed"><i class="fa-solid fa-bed"></i> Queen Bed</span>
+                            <span class="amenity-item" title="High-Speed Wi-Fi"><i class="fa-solid fa-wifi"></i> Free Wi-Fi</span>
+                            <span class="amenity-item" title="Air Conditioning"><i class="fa-solid fa-snowflake"></i> Smart AC</span>
+                            <span class="amenity-item" title="Work Desk"><i class="fa-solid fa-laptop"></i> Work Desk</span>
+                        </div>
+                        <div class="room-footer">
+                            <div class="room-capacity">
+                                <i class="fa-solid fa-user-group"></i> Max 2 Guests
+                            </div>
+                            <a href="#booking" class="btn btn-outline btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Room 2: Deluxe Room -->
+                <article class="room-card featured-room">
+                    <div class="room-img-container">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" 
+                             alt="Spacious Deluxe Room with Modern Interior" 
+                             class="room-img">
+                        <span class="room-badge popular-badge">Most Popular</span>
+                        <div class="room-price-tag">
+                            <span class="price-val">₹3,500</span>
+                            <span class="price-period">/ night</span>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="rating-text">4.9 (240 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Deluxe Room</h3>
+                        <p class="room-description">
+                            Spacious room with modern designer interiors, plush king-size bedding, a private balcony, and serene garden or pool views.
+                        </p>
+                        <!-- Room Facilities List -->
+                        <div class="room-amenities">
+                            <span class="amenity-item" title="King Size Bed"><i class="fa-solid fa-bed"></i> King Bed</span>
+                            <span class="amenity-item" title="Balcony View"><i class="fa-solid fa-mountain-sun"></i> Balcony</span>
+                            <span class="amenity-item" title="55 inch 4K TV"><i class="fa-solid fa-tv"></i> 55" Smart TV</span>
+                            <span class="amenity-item" title="Mini Bar"><i class="fa-solid fa-wine-glass"></i> Mini Bar</span>
+                        </div>
+                        <div class="room-footer">
+                            <div class="room-capacity">
+                                <i class="fa-solid fa-user-group"></i> Max 2-3 Guests
+                            </div>
+                            <a href="#booking" class="btn btn-primary btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Room 3: Luxury Suite -->
+                <article class="room-card">
+                    <div class="room-img-container">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" 
+                             alt="Luxury Suite with Panoramic View and Living Room" 
+                             class="room-img">
+                        <span class="room-badge luxury-badge">Royal Suite</span>
+                        <div class="room-price-tag">
+                            <span class="price-val">₹5,500</span>
+                            <span class="price-period">/ night</span>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="rating-text">5.0 (310 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Luxury Suite</h3>
+                        <p class="room-description">
+                            The pinnacle of royal indulgence. Features a master bedroom, dedicated lounge, marble jacuzzi, and panoramic ocean vista.
+                        </p>
+                        <!-- Room Facilities List -->
+                        <div class="room-amenities">
+                            <span class="amenity-item" title="Royal Jacuzzi"><i class="fa-solid fa-hot-tub-person"></i> Jacuzzi</span>
+                            <span class="amenity-item" title="Living Lounge"><i class="fa-solid fa-couch"></i> Lounge</span>
+                            <span class="amenity-item" title="Ocean Panorama"><i class="fa-solid fa-water"></i> Ocean View</span>
+                            <span class="amenity-item" title="24/7 Butler"><i class="fa-solid fa-bell-concierge"></i> Butler</span>
+                        </div>
+                        <div class="room-footer">
+                            <div class="room-capacity">
+                                <i class="fa-solid fa-user-group"></i> Max 3 Guests
+                            </div>
+                            <a href="#booking" class="btn btn-outline btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Room 4: Family Room -->
+                <article class="room-card">
+                    <div class="room-img-container">
+                        <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=800&q=80" 
+                             alt="Family Room with Multiple Beds and Cozy Seating" 
+                             class="room-img">
+                        <span class="room-badge family-badge">Family Choice</span>
+                        <div class="room-price-tag">
+                            <span class="price-val">₹4,500</span>
+                            <span class="price-period">/ night</span>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <div class="room-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rating-text">4.8 (185 reviews)</span>
+                        </div>
+                        <h3 class="room-title">Family Room</h3>
+                        <p class="room-description">
+                            Generous multi-bed layout designed for harmonious family vacations, complete with child-friendly amenities and entertainment hub.
+                        </p>
+                        <!-- Room Facilities List -->
+                        <div class="room-amenities">
+                            <span class="amenity-item" title="2 Queen Beds"><i class="fa-solid fa-bed"></i> 2 Queen Beds</span>
+                            <span class="amenity-item" title="Connecting Living Area"><i class="fa-solid fa-door-open"></i> Twin Rooms</span>
+                            <span class="amenity-item" title="Kids Corner"><i class="fa-solid fa-gamepad"></i> Kids Games</span>
+                            <span class="amenity-item" title="Breakfast Included"><i class="fa-solid fa-utensils"></i> Free Breakfast</span>
+                        </div>
+                        <div class="room-footer">
+                            <div class="room-capacity">
+                                <i class="fa-solid fa-users"></i> Max 4-5 Guests
+                            </div>
+                            <a href="#booking" class="btn btn-outline btn-sm">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 5: HOTEL FACILITIES
+         Includes: 8 Premium Amenities Displayed in Modern Luxury Cards
+         ========================================================= -->
+    <section class="facilities-section section-padding" id="facilities">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">World-Class Amenities</span>
+                <h2 class="section-title">Designed for Your Comfort &amp; Pleasure</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle">
+                    Indulge in an exquisite assortment of recreational, leisure, and wellness amenities tailored to enrich your stay.
+                </p>
+            </div>
+
+            <div class="facilities-grid">
+                <!-- Facility 1: Wi-Fi -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrap">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <h3 class="facility-name">Free High-Speed Wi-Fi</h3>
+                    <p class="facility-text">
+                        Seamless ultra-fast optical fiber connectivity accessible across all rooms, gardens, lounges, and event spaces.
+                    </p>
+                </div>
+
+                <!-- Facility 2: Swimming Pool -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrap">
+                        <i class="fa-solid fa-water-ladder"></i>
+                    </div>
+                    <h3 class="facility-name">Infinity Swimming Pool</h3>
+                    <p class="facility-text">
+                        Temperature-controlled heated pool with sun loungers, poolside cocktail bar, and breathtaking horizon vistas.
+                    </p>
+                </div>
+
+                <!-- Facility 3: Restaurant -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrap">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="facility-name">Gourmet Restaurant</h3>
+                    <p class="facility-text">
+                        Multi-cuisine fine dining serving authentic international flavours, seasonal seafood, and organic farm-to-table delights.
+                    </p>
+                </div>
+
+                <!-- Facility 4: Gym -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrap">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3 class="facility-name">Gym &amp; Fitness Center</h3>
+                    <p class="facility-text">
+                        State-of-the-art cardiovascular and strength machines, dedicated yoga studio, and certified personal trainers.
+                    </p>
+                </div>
+
+                <!-- Facility 5: AC -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrap">
+                        <i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <h3 class="facility-name">Climate Controlled AC</h3>
+                    <p class="facility-text">
+                        Silent, customizable individual digital climate controls with HEPA air purification for pristine indoor air.
+                    </p>
+                </div>
+
+                <!-- Facility 6: 24/7 Room Service -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrap">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                    <h3 class="facility-name">24/7 Room Service</h3>
+                    <p class="facility-text">
+                        Round-the-clock bespoke in-room dining, fresh midnight delicacies, and prompt housekeeping at your beck and call.
+                    </p>
+                </div>
+
+                <!-- Facility 7: Parking -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrap">
+                        <i class="fa-solid fa-square-parking"></i>
+                    </div>
+                    <h3 class="facility-name">Free Valet Parking</h3>
+                    <p class="facility-text">
+                        Spacious, 24-hour guarded subterranean parking with complimentary EV fast-charging stations and valet attendants.
+                    </p>
+                </div>
+
+                <!-- Facility 8: Spa -->
+                <div class="facility-card">
+                    <div class="facility-icon-wrap">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="facility-name">Spa &amp; Wellness Sanctuary</h3>
+                    <p class="facility-text">
+                        Ayurvedic healing rituals, Swedish aromatherapy massages, steam sauna, and restorative thermal plunge baths.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 6: SPECIAL OFFERS & PACKAGES
+         Includes: Highlight Discounts, Promotional Cards,
+         Banner with Coupon Code and Direct Reservation CTA
+         ========================================================= -->
+    <section class="offers-section section-padding bg-light" id="offers">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Limited Time Privileges</span>
+                <h2 class="section-title">Exclusive Hotel Offers &amp; Packages</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle">
+                    Enjoy extraordinary savings and curated luxury experiences with our seasonal special packages.
+                </p>
+            </div>
+
+            <!-- Offers Cards Grid -->
+            <div class="offers-grid">
+                <!-- Offer 1 -->
+                <div class="offer-card">
+                    <div class="offer-badge">Save 25%</div>
+                    <div class="offer-img-box">
+                        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80" 
+                             alt="Luxury Spa Treatment and Wellness Massage" 
+                             class="offer-img">
+                    </div>
+                    <div class="offer-details">
+                        <span class="offer-duration"><i class="fa-regular fa-clock"></i> Valid till Dec 31</span>
+                        <h3 class="offer-title">Wellness &amp; Spa Retreat</h3>
+                        <p class="offer-desc">
+                            Book a 2-night stay in any Deluxe Room or Suite and enjoy 2 complimentary 60-minute therapeutic massages plus daily healthy breakfast.
+                        </p>
+                        <div class="offer-code-wrap">
+                            Use Code: <span class="coupon-code">WELLNESS25</span>
+                        </div>
+                        <a href="#booking" class="btn btn-outline btn-block">Claim This Offer</a>
+                    </div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer-card featured-offer">
+                    <div class="offer-badge gold-badge">Most Popular</div>
+                    <div class="offer-img-box">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=700&q=80" 
+                             alt="Romantic Candlelight Beachside Dinner" 
+                             class="offer-img">
+                    </div>
+                    <div class="offer-details">
+                        <span class="offer-duration"><i class="fa-regular fa-clock"></i> All Year Round</span>
+                        <h3 class="offer-title">Romantic Honeymoon Package</h3>
+                        <p class="offer-desc">
+                            Includes 3 nights in our Luxury Suite, chilled sparkling wine upon arrival, daily candlelit terrace dinner, and private airport pickup.
+                        </p>
+                        <div class="offer-code-wrap">
+                            Use Code: <span class="coupon-code">ROMANCE30</span>
+                        </div>
+                        <a href="#booking" class="btn btn-primary btn-block">Claim This Offer</a>
+                    </div>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer-card">
+                    <div class="offer-badge">Stay 4, Pay 3</div>
+                    <div class="offer-img-box">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" 
+                             alt="Family Vacation Infinity Pool and Sun Loungers" 
+                             class="offer-img">
+                    </div>
+                    <div class="offer-details">
+                        <span class="offer-duration"><i class="fa-regular fa-clock"></i> Weekend Special</span>
+                        <h3 class="offer-title">Extended Family Vacation</h3>
+                        <p class="offer-desc">
+                            Reserve a Family Room for 4 consecutive nights and receive the 4th night absolutely complimentary along with full pool access.
+                        </p>
+                        <div class="offer-code-wrap">
+                            Use Code: <span class="coupon-code">EXTENDSTAY</span>
+                        </div>
+                        <a href="#booking" class="btn btn-outline btn-block">Claim This Offer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grand Promotional Banner -->
+            <div class="offer-banner">
+                <div class="offer-banner-content">
+                    <span class="banner-tag"><i class="fa-solid fa-gift"></i> Royal Membership Perk</span>
+                    <h3 class="banner-title">Direct Booking Privilege: Instant 15% Additional Cashback</h3>
+                    <p class="banner-text">
+                        Book directly on our official website today to receive guaranteed room upgrades (subject to availability), complimentary high tea, and late 2:00 PM checkout.
+                    </p>
+                </div>
+                <div class="offer-banner-action">
+                    <a href="#booking" class="btn btn-primary btn-large">Book Your Stay Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 7: CUSTOMER REVIEWS
+         Includes: 3+ Detailed Reviews with Avatars, Star Ratings,
+         Designations, and Verified Guest Badges
+         ========================================================= -->
+    <section class="reviews-section section-padding" id="reviews">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Guest Experiences</span>
+                <h2 class="section-title">Words From Our Cherished Guests</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle">
+                    Read genuine stories from guests who discovered tranquility, culinary marvels, and unmatched hospitality at Grand Horizon Hotel.
+                </p>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <article class="review-card">
+                    <div class="review-quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "The Luxury Suite exceeded every expectation. The balcony views of the ocean were breathtaking, and the 24/7 butler service was prompt and exceptionally courteous. Truly a 5-star haven!"
+                    </p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
+                             alt="Portrait of Aarav Sharma" 
+                             class="author-avatar">
+                        <div class="author-info">
+                            <h4 class="author-name">Aarav Sharma</h4>
+                            <span class="author-role">Corporate Vice President, Mumbai</span>
+                            <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Stay (Luxury Suite)</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Review 2 -->
+                <article class="review-card featured-review">
+                    <div class="review-quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "As a travel creator who stays at hotels worldwide, Grand Horizon ranks at the absolute top. The infinity pool at sunset is mesmerizing, and the chef personalized an exquisite multi-course vegan dinner for us."
+                    </p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" 
+                             alt="Portrait of Priya Patel" 
+                             class="author-avatar">
+                        <div class="author-info">
+                            <h4 class="author-name">Priya Patel</h4>
+                            <span class="author-role">Travel &amp; Lifestyle Blogger, Delhi</span>
+                            <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Stay (Deluxe Room)</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Review 3 -->
+                <article class="review-card">
+                    <div class="review-quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "Our family holiday here was pure bliss! The Family Room was so spacious with plenty of space for our two kids. The heated pool and attentive staff made our vacation stress-free and unforgettable."
+                    </p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" 
+                             alt="Portrait of Vikram Singhania" 
+                             class="author-avatar">
+                        <div class="author-info">
+                            <h4 class="author-name">Vikram &amp; Ananya Singhania</h4>
+                            <span class="author-role">Architect &amp; Designer, Bengaluru</span>
+                            <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Stay (Family Room)</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 8: BOOKING SECTION
+         Includes: Complete Interactive-Looking HTML Form with
+         Guest Info, Dates, Category Selection, Guests Count,
+         Special Requests, Submit Button, and Frontend-Only Notice
+         ========================================================= -->
+    <section class="booking-section section-padding bg-light" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <!-- Left Info Side -->
+                <div class="booking-info-panel">
+                    <span class="section-tag-light">Direct Reservation</span>
+                    <h2 class="booking-title">Reserve Your Luxurious Haven</h2>
+                    <p class="booking-text">
+                        Enjoy the best guaranteed rates, flexible cancellation up to 48 hours before arrival, and complimentary welcome refreshments upon check-in.
+                    </p>
+
+                    <div class="booking-perks-list">
+                        <div class="perk-item">
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <h5>Guaranteed Best Rate</h5>
+                                <p>No hidden booking fees or sudden surge pricing.</p>
+                            </div>
+                        </div>
+                        <div class="perk-item">
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <h5>Flexible Cancellation</h5>
+                                <p>Free rescheduling up to 48 hours prior to arrival.</p>
+                            </div>
+                        </div>
+                        <div class="perk-item">
+                            <i class="fa-solid fa-check"></i>
+                            <div>
+                                <h5>Instant Email Confirmation</h5>
+                                <p>Receive your booking voucher and concierge details instantly.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Assistance Card -->
+                    <div class="booking-help-card">
+                        <i class="fa-solid fa-headset help-icon"></i>
+                        <div>
+                            <h4>Need Immediate Booking Assistance?</h4>
+                            <p>Call our 24/7 Concierge: <strong>+91 22 5550 8899</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Side -->
+                <div class="booking-form-panel">
+                    <form class="hotel-booking-form" action="#booking" method="get">
+                        <h3 class="form-heading">Online Reservation Form</h3>
+                        <p class="form-subheading">Fill in the details below to lock your preferred suite.</p>
+
+                        <div class="form-row">
+                            <!-- Guest Name -->
+                            <div class="form-group col-12">
+                                <label for="guest-name"><i class="fa-regular fa-user"></i> Full Name *</label>
+                                <input type="text" id="guest-name" name="guest_name" placeholder="e.g. Rajesh Kumar" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <!-- Email Address -->
+                            <div class="form-group col-6">
+                                <label for="guest-email"><i class="fa-regular fa-envelope"></i> Email Address *</label>
+                                <input type="email" id="guest-email" name="guest_email" placeholder="name@example.com" required>
+                            </div>
+
+                            <!-- Phone Number -->
+                            <div class="form-group col-6">
+                                <label for="guest-phone"><i class="fa-solid fa-phone"></i> Phone Number *</label>
+                                <input type="tel" id="guest-phone" name="guest_phone" placeholder="+91 98765 43210" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <!-- Check-in Date -->
+                            <div class="form-group col-6">
+                                <label for="checkin-date"><i class="fa-regular fa-calendar-check"></i> Check-in Date *</label>
+                                <input type="date" id="checkin-date" name="checkin_date" required>
+                            </div>
+
+                            <!-- Check-out Date -->
+                            <div class="form-group col-6">
+                                <label for="checkout-date"><i class="fa-regular fa-calendar-xmark"></i> Check-out Date *</label>
+                                <input type="date" id="checkout-date" name="checkout_date" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <!-- Room Category -->
+                            <div class="form-group col-6">
+                                <label for="room-category"><i class="fa-solid fa-bed"></i> Room Category *</label>
+                                <select id="room-category" name="room_category" required>
+                                    <option value="" disabled selected>Select Room</option>
+                                    <option value="standard">Standard Room (₹2,000 / night)</option>
+                                    <option value="deluxe">Deluxe Room (₹3,500 / night)</option>
+                                    <option value="suite">Luxury Suite (₹5,500 / night)</option>
+                                    <option value="family">Family Room (₹4,500 / night)</option>
+                                </select>
+                            </div>
+
+                            <!-- Number of Guests -->
+                            <div class="form-group col-6">
+                                <label for="guest-count"><i class="fa-solid fa-user-group"></i> Number of Guests *</label>
+                                <select id="guest-count" name="guest_count" required>
+                                    <option value="1">1 Guest (Single)</option>
+                                    <option value="2" selected>2 Guests (Couple / Pair)</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests (Family)</option>
+                                    <option value="5+">5+ Guests (Suite / Connecting)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Special Requests -->
+                        <div class="form-group col-12">
+                            <label for="special-requests"><i class="fa-regular fa-message"></i> Special Requests (Optional)</label>
+                            <textarea id="special-requests" name="special_requests" rows="3" placeholder="e.g. Airport pickup, quiet high floor, anniversary cake, vegetarian meal preferences..."></textarea>
+                        </div>
+
+                        <!-- Frontend Demonstration Notice -->
+                        <div class="form-demo-notice">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Note: This is a frontend demonstration website. Submitting this form simulates a booking inquiry and does not charge any payment.</span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-submit-row">
+                            <button type="submit" class="btn btn-primary btn-block btn-submit">
+                                <i class="fa-solid fa-shield-check"></i> Confirm Reservation
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 9: CONTACT AND LOCATION
+         Includes: Address, Phone, Email, Hours, Social Media,
+         and Responsive Styled Location Map Card
+         ========================================================= -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Reach Out To Us</span>
+                <h2 class="section-title">Contact &amp; Location</h2>
+                <div class="title-divider"></div>
+                <p class="section-subtitle">
+                    We are located along the iconic coastal boulevard. Our concierge is ready 24/7 to assist with your inquiries and travel arrangements.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Information Cards -->
+                <div class="contact-info-col">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Hotel Address</h4>
+                            <p>Grand Horizon Hotel &amp; Resort,<br>88 Marine Drive Boulevard, Nariman Point,<br>Mumbai, Maharashtra 400020, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Telephone Numbers</h4>
+                            <p>Toll-Free Reservations: <strong>+91 22 5550 8899</strong><br>Front Desk &amp; Concierge: <strong>+91 98765 43210</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Email Enquiries</h4>
+                            <p>Reservations: <a href="mailto:reservations@grandhorizonhotel.com">reservations@grandhorizonhotel.com</a><br>Customer Care: <a href="mailto:concierge@grandhorizonhotel.com">concierge@grandhorizonhotel.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h4>Operating Hours</h4>
+                            <p>Front Desk &amp; Check-In: <strong>24 Hours / 7 Days</strong><br>Standard Check-In: 2:00 PM | Check-Out: 12:00 Noon</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Connect -->
+                    <div class="contact-social-box">
+                        <h5>Connect With Grand Horizon</h5>
+                        <div class="social-icons-list">
+                            <a href="#contact" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#contact" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#contact" class="social-btn" aria-label="Twitter X"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#contact" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#contact" class="social-btn" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Map Embed / Interactive Placeholder -->
+                <div class="contact-map-col">
+                    <div class="map-card-container">
+                        <div class="map-header">
+                            <div class="map-title-badge">
+                                <i class="fa-solid fa-compass"></i> Prime Oceanfront Location
+                            </div>
+                            <span class="map-airport-tag"><i class="fa-solid fa-plane"></i> 25 mins from International Airport</span>
+                        </div>
+                        <!-- Responsive Map iframe using OpenStreetMap / Google Embed -->
+                        <div class="map-embed-wrapper">
+                            <iframe 
+                                title="Grand Horizon Hotel Location Map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15093.896792348574!2d72.81512845!3d18.93244835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1e70498b67f%3A0xe7f9b8c0df4a7810!2sMarine%20Drive%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="420" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="map-footer-info">
+                            <div class="map-dist-item">
+                                <i class="fa-solid fa-water"></i>
+                                <span>Beachfront: <strong>Direct Access</strong></span>
+                            </div>
+                            <div class="map-dist-item">
+                                <i class="fa-solid fa-train"></i>
+                                <span>Railway Station: <strong>10 mins</strong></span>
+                            </div>
+                            <div class="map-dist-item">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <span>Luxury Mall: <strong>5 mins</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 10: FOOTER
+         Includes: Hotel Identity, Quick Links, Accommodations,
+         Newsletter Signup, Contact Quick Recap, and Copyright
+         ========================================================= -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Column 1: Brand Info -->
+                    <div class="footer-col brand-col">
+                        <a href="#home" class="footer-logo">
+                            <span class="logo-icon"><i class="fa-solid fa-crown"></i></span>
+                            <span class="logo-text">
+                                <span class="logo-title">GRAND HORIZON</span>
+                                <span class="logo-subtitle">HOTEL &amp; RESORT</span>
+                            </span>
+                        </a>
+                        <p class="footer-about">
+                            A benchmark of 5-star international luxury, Grand Horizon Hotel offers discerning global travelers unmatched comfort, Michelin-inspired gastronomy, and serene seaside rejuvenation.
+                        </p>
+                        <div class="footer-socials">
+                            <a href="#contact" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#contact" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#contact" class="footer-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#contact" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Quick Links -->
+                    <div class="footer-col links-col">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                            <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Our Hotel</a></li>
+                            <li><a href="#rooms"><i class="fa-solid fa-angle-right"></i> Rooms &amp; Suites</a></li>
+                            <li><a href="#facilities"><i class="fa-solid fa-angle-right"></i> Hotel Facilities</a></li>
+                            <li><a href="#offers"><i class="fa-solid fa-angle-right"></i> Exclusive Offers</a></li>
+                            <li><a href="#reviews"><i class="fa-solid fa-angle-right"></i> Guest Reviews</a></li>
+                            <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact &amp; Location</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Room Categories -->
+                    <div class="footer-col rooms-col">
+                        <h4 class="footer-heading">Our Rooms</h4>
+                        <ul class="footer-links-list">
+                            <li><a href="#rooms"><i class="fa-solid fa-angle-right"></i> Standard Room (₹2,000)</a></li>
+                            <li><a href="#rooms"><i class="fa-solid fa-angle-right"></i> Deluxe Room (₹3,500)</a></li>
+                            <li><a href="#rooms"><i class="fa-solid fa-angle-right"></i> Luxury Suite (₹5,500)</a></li>
+                            <li><a href="#rooms"><i class="fa-solid fa-angle-right"></i> Family Room (₹4,500)</a></li>
+                            <li><a href="#booking"><i class="fa-solid fa-angle-right"></i> Presidential Suite</a></li>
+                            <li><a href="#booking"><i class="fa-solid fa-angle-right"></i> Honeymoon Package</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Newsletter & Contact -->
+                    <div class="footer-col newsletter-col">
+                        <h4 class="footer-heading">Royal Newsletter</h4>
+                        <p class="footer-news-text">
+                            Subscribe to receive exclusive seasonal discounts, secret member rates, and invitations to culinary events.
+                        </p>
+                        <form class="footer-subscribe-form" action="#home" method="get">
+                            <div class="subscribe-input-group">
+                                <input type="email" placeholder="Enter your email" required aria-label="Email address for newsletter">
+                                <button type="submit" class="btn btn-primary" aria-label="Subscribe">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="footer-contact-summary">
+                            <p><i class="fa-solid fa-phone"></i> +91 22 5550 8899</p>
+                            <p><i class="fa-solid fa-envelope"></i> info@grandhorizonhotel.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom: Copyright & Legal -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p class="copyright-text">
+                    &copy; 2026 <strong>Grand Horizon Hotel</strong>. All Rights Reserved. Crafted for Luxury &amp; Hospitality.
+                </p>
+                <div class="footer-legal-links">
+                    <a href="#home">Privacy Policy</a>
+                    <span class="sep">|</span>
+                    <a href="#home">Terms of Service</a>
+                    <span class="sep">|</span>
+                    <a href="#home">Booking Policy</a>
+                    <span class="sep">|</span>
+                    <a href="#home">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button (Pure CSS Anchor) -->
+    <a href="#home" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+</body>
+</html>
